@@ -1,3 +1,5 @@
+import React from "react";
+
 interface ColProps {
   children: React.ReactNode;
   className?: string;
