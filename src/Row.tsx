@@ -5,7 +5,11 @@ interface RowProps {
 }
 
 function Row(props: RowProps) {
-  return <div className="flex flex-row justify-evenly">{props.children}</div>;
+  return (
+    <div className="flex flex-row justify-evenly items-center">
+      {props.children}
+    </div>
+  );
 }
 
 export default Row;
