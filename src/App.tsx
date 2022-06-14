@@ -31,18 +31,20 @@ function App() {
           )}
         />
         <Indicator
-          label="Per Diem"
-          value={formatPay(
-            airlines.filter((airline) => airline.code === currentAirline)[0]
-              .perdiem,
-          )}
-        />
-        <Indicator
           label="Guarantee"
           value={`${
             airlines.filter((airline) => airline.code === currentAirline)[0]
               .guarantee
           } hours`}
+        />
+      </Row>
+      <Row>
+        <Indicator
+          label="Per Diem"
+          value={formatPay(
+            airlines.filter((airline) => airline.code === currentAirline)[0]
+              .perdiem,
+          )}
         />
       </Row>
     </div>
