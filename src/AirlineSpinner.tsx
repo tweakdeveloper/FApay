@@ -1,7 +1,12 @@
 import React from "react";
 
+interface Airline {
+  code: string;
+  name: string;
+}
+
 interface AirlineSpinnerProps {
-  airlines: { code: string; name: string }[];
+  airlines: Airline[];
   onAirlineChanged(code: string): void;
 }
 
