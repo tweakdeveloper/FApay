@@ -1,4 +1,5 @@
 interface IndicatorProps {
+  className?: string;
   label: string;
   value: string;
   withDisclaimer?: boolean;
@@ -7,7 +8,7 @@ interface IndicatorProps {
 function Indicator(props: IndicatorProps) {
   const withDisclaimer = props.withDisclaimer ?? false;
   return (
-    <div className="inline-block text-center">
+    <div className={"inline-block text-center " + props.className ?? ""}>
       <h3 className="font-thin">
         {props.label}
         <span className="text-red-500">{withDisclaimer ? "*" : ""}</span>

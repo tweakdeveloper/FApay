@@ -14,7 +14,7 @@ function AirlineSpinner(props: AirlineSpinnerProps) {
   const [airline, setAirline] = React.useState("MQ");
   return (
     <select
-      className="p-1 rounded"
+      className="p-1 rounded col-span-full place-self-stretch"
       onChange={(evt) => {
         setAirline(evt.target.value);
         props.onAirlineChanged(evt.target.value);
