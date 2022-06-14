@@ -25,8 +25,14 @@ function App() {
     const guarantee = airline.guarantee;
     return hourly * guarantee;
   }, [currentAirline]);
+  const monthlyPerDiem = React.useMemo(() => {
+    return (
+      airlines.filter((airline) => airline.code === currentAirline)[0].perdiem *
+      312
+    );
+  }, [currentAirline]);
   return (
-    <div className="flex flex-col space-y-4 w-full lg:w-1/3 lg:mx-auto xl:w-1/4">
+    <div className="flex flex-col space-y-4 w-full lg:w-1/2 lg:mx-auto xl:w-1/3">
       <h1 className="text-3xl text-center">FApay</h1>
       <AirlineSpinner
         airlines={airlines}
@@ -62,6 +68,10 @@ function App() {
               .perdiem,
           )}
         />
+        <XIcon className="h-6 w-6" />
+        <Indicator label="Assumed Per Diem" value="312" withDisclaimer />
+        <ArrowRightIcon className="h-6 w-6" />
+        <Indicator label="Monthly Per Diem" value={formatPay(monthlyPerDiem)} />
       </Row>
     </div>
   );
