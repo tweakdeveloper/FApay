@@ -6,7 +6,7 @@ interface RowProps {
 
 function Row(props: RowProps) {
   return (
-    <div className="flex flex-row justify-evenly items-center">
+    <div className="flex flex-row justify-between items-center space-x-2">
       {props.children}
     </div>
   );
