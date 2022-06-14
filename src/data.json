@@ -1,5 +1,5 @@
 [
-  {"code": "MQ", "name": "Envoy Air", "pay": 19.89},
-  {"code": "OO", "name": "SkyWest", "pay": 20.55},
-  {"code": "YV", "name": "Mesa Airlines", "pay": 16.77}
+  {"code": "MQ", "name": "Envoy Air", "pay": 19.89, "perdiem": 1.95},
+  {"code": "OO", "name": "SkyWest", "pay": 20.55, "perdiem": 2.00},
+  {"code": "YV", "name": "Mesa Airlines", "pay": 16.77, "perdiem": 1.70}
 ]

@@ -2,6 +2,7 @@ import React from "react";
 
 import AirlineSpinner from "./AirlineSpinner";
 import Indicator from "./Indicator";
+import Row from "./Row";
 
 import airlines from "./data.json";
 
@@ -21,12 +22,22 @@ function App() {
         airlines={airlines}
         onAirlineChanged={(code: string) => setCurrentAirline(code)}
       />
-      <Indicator
-        label="Hourly"
-        value={formatPay(
-          airlines.filter((airline) => airline.code === currentAirline)[0].pay,
-        )}
-      />
+      <Row>
+        <Indicator
+          label="Hourly"
+          value={formatPay(
+            airlines.filter((airline) => airline.code === currentAirline)[0]
+              .pay,
+          )}
+        />
+        <Indicator
+          label="Per Diem"
+          value={formatPay(
+            airlines.filter((airline) => airline.code === currentAirline)[0]
+              .perdiem,
+          )}
+        />
+      </Row>
     </div>
   );
 }
