@@ -37,6 +37,13 @@ function App() {
               .perdiem,
           )}
         />
+        <Indicator
+          label="Guarantee"
+          value={`${
+            airlines.filter((airline) => airline.code === currentAirline)[0]
+              .guarantee
+          } hours`}
+        />
       </Row>
     </div>
   );
