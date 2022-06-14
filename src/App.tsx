@@ -6,7 +6,7 @@ import AirlineSpinner from "./AirlineSpinner";
 import Indicator from "./Indicator";
 import Row from "./Row";
 
-import airlines from "./data.json";
+import airlines from "./assets/data.json";
 
 function formatPay(pay: number): string {
   return new Intl.NumberFormat("en-US", {
