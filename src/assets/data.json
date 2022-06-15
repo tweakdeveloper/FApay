@@ -3,6 +3,7 @@
   {"code": "MQ", "name": "Envoy Air", "pay": 19.89, "perdiem": 1.95, "guarantee": 75},
   {"code": "OH", "name": "PSA Airlines", "pay": 19.77, "perdiem": 1.95, "guarantee": 75},
   {"code": "OO", "name": "SkyWest", "pay": 20.55, "perdiem": 2.00, "guarantee": 76},
+  {"code": "PT", "name": "Piedmont Airlines", "pay": 19.06, "perdiem": 1.80, "guarantee": 72},
   {"code": "YV", "name": "Mesa Airlines", "pay": 16.77, "perdiem": 1.70, "guarantee": 74},
   {"code": "YX", "name": "Republic Airways", "pay": 18.20, "perdiem": 2.00, "guarantee": 75}
 ]
