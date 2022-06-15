@@ -1,6 +1,7 @@
 [
   {"code": "9E", "name": "Endeavor Air", "pay": 19.57, "perdiem": 1.90, "guarantee": 75},
   {"code": "MQ", "name": "Envoy Air", "pay": 19.89, "perdiem": 1.95, "guarantee": 75},
+  {"code": "OH", "name": "PSA Airlines", "pay": 19.77, "perdiem": 1.95, "guarantee": 75},
   {"code": "OO", "name": "SkyWest", "pay": 20.55, "perdiem": 2.00, "guarantee": 76},
   {"code": "YV", "name": "Mesa Airlines", "pay": 16.77, "perdiem": 1.70, "guarantee": 74}
 ]
